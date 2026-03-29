@@ -1,6 +1,6 @@
 # Optimal Information–Energy Tradeoffs Lie Below Operational Criticality
 
-**Physical Review E — Submission Package**  
+  
 **Author:** Nalin Dhiman, IIT Mandi
 
 ---
@@ -613,7 +613,6 @@ If you use this code or data in your own research, please cite:
 ```
 Nalin Dhiman,
 "Optimal information–energy tradeoffs lie below operational criticality,"
-Physical Review E (submitted, 2026).
 IIT Mandi.
 ```
 
