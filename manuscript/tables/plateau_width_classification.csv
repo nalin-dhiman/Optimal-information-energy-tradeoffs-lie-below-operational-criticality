@@ -1,0 +1,11 @@
+N,beta_E,reported_width,classification,reason
+2000,0.0,0.04,not suitable for quantitative width claim,Plateau spans entire evaluated grid; true width unknown.
+2000,0.2,0.03,lower bound,Plateau touches one grid boundary; true width is strictly larger.
+5000,0.0,0.03,lower bound,Plateau touches one grid boundary; true width is strictly larger.
+5000,0.2,0.04,lower bound,Plateau touches one grid boundary; true width is strictly larger.
+8000,0.0,0.1,not suitable for quantitative width claim,Plateau spans entire evaluated grid; true width unknown.
+8000,0.2,0.08,lower bound,Plateau touches one grid boundary; true width is strictly larger.
+10000,0.0,0.1,not suitable for quantitative width claim,Plateau spans entire evaluated grid; true width unknown.
+10000,0.2,0.1,not suitable for quantitative width claim,Plateau spans entire evaluated grid; true width unknown.
+12000,0.0,0.06,lower bound,Plateau touches one grid boundary; true width is strictly larger.
+12000,0.2,0.1,not suitable for quantitative width claim,Plateau spans entire evaluated grid; true width unknown.

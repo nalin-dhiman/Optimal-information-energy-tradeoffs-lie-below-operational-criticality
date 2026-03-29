@@ -1,0 +1,4 @@
+N,seed,tau_c,beta_E,beta_C,J,Jc_used,Delta,theta0,thetaV,thetaA,I_dec,mean_rate,objective,stable_flag,error_msg
+5000,1,0.02,0.0,0.005,0.48,nan,nan,nan,nan,nan,nan,nan,nan,0,SystemError('CPUDispatcher(<function _simulate_mc_numba at 0x7db3e5bdd300>) returned a result with an exception set')
+5000,1,0.02,0.0,0.005,0.49,nan,nan,nan,nan,nan,nan,nan,nan,0,SystemError('CPUDispatcher(<function _simulate_mc_numba at 0x7db3e5bdd300>) returned a result with an exception set')
+5000,1,0.02,0.0,0.005,0.5,nan,nan,3.5409840230648197,-3.2868490054911454,-0.21767379476776172,16.601211956022617,4.73696,16.565984421906,1,

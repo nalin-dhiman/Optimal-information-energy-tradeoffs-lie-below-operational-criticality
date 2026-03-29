@@ -1,0 +1,65 @@
+nohup: ignoring input
+================================================================================
+Running Optimization Grid
+out_dir: results/opt_N10000_scale_20260319_150818
+smoke_test: False
+N_list: [10000]
+T=10.0  dt=0.0005
+seeds: [1, 2, 3]
+tau_c_list: [0.05]
+beta_E_list: [0.0, 0.2]
+beta_C: 0.005
+n_restarts: 2  maxiter: 8
+jc_outdir: results/jc_refine_20260304_094704  J_center_source: tau
+J_list override: [0.46, 0.48, 0.5, 0.52, 0.54, 0.56]
+rate_cap for summary/plots: 20.0
+================================================================================
+
+--- N=10000 ---
+Jc_used: 0.6000000000000001
+J_grid (6 pts): 0.460, 0.480, 0.500, 0.520, 0.540, 0.560
+tau_c=0.05
+  beta_E=0.0
+[progress] 0/36  N=10000 seed=1 tau_c=0.05 beta_E=0.0 J=0.4600 (1/6)
+[progress] 1/36  N=10000 seed=1 tau_c=0.05 beta_E=0.0 J=0.4800 (2/6)
+[progress] 2/36  N=10000 seed=1 tau_c=0.05 beta_E=0.0 J=0.5000 (3/6)
+[progress] 3/36  N=10000 seed=1 tau_c=0.05 beta_E=0.0 J=0.5200 (4/6)
+[progress] 4/36  N=10000 seed=1 tau_c=0.05 beta_E=0.0 J=0.5400 (5/6)
+[progress] 5/36  N=10000 seed=1 tau_c=0.05 beta_E=0.0 J=0.5600 (6/6)
+[progress] 6/36  N=10000 seed=2 tau_c=0.05 beta_E=0.0 J=0.4600 (1/6)
+[progress] 7/36  N=10000 seed=2 tau_c=0.05 beta_E=0.0 J=0.4800 (2/6)
+[progress] 8/36  N=10000 seed=2 tau_c=0.05 beta_E=0.0 J=0.5000 (3/6)
+[progress] 9/36  N=10000 seed=2 tau_c=0.05 beta_E=0.0 J=0.5200 (4/6)
+[progress] 10/36  N=10000 seed=2 tau_c=0.05 beta_E=0.0 J=0.5400 (5/6)
+[progress] 11/36  N=10000 seed=2 tau_c=0.05 beta_E=0.0 J=0.5600 (6/6)
+[progress] 12/36  N=10000 seed=3 tau_c=0.05 beta_E=0.0 J=0.4600 (1/6)
+[progress] 13/36  N=10000 seed=3 tau_c=0.05 beta_E=0.0 J=0.4800 (2/6)
+[progress] 14/36  N=10000 seed=3 tau_c=0.05 beta_E=0.0 J=0.5000 (3/6)
+[progress] 15/36  N=10000 seed=3 tau_c=0.05 beta_E=0.0 J=0.5200 (4/6)
+[progress] 16/36  N=10000 seed=3 tau_c=0.05 beta_E=0.0 J=0.5400 (5/6)
+[progress] 17/36  N=10000 seed=3 tau_c=0.05 beta_E=0.0 J=0.5600 (6/6)
+  beta_E=0.2
+[progress] 18/36  N=10000 seed=1 tau_c=0.05 beta_E=0.2 J=0.4600 (1/6)
+[progress] 19/36  N=10000 seed=1 tau_c=0.05 beta_E=0.2 J=0.4800 (2/6)
+[progress] 20/36  N=10000 seed=1 tau_c=0.05 beta_E=0.2 J=0.5000 (3/6)
+[progress] 21/36  N=10000 seed=1 tau_c=0.05 beta_E=0.2 J=0.5200 (4/6)
+[progress] 22/36  N=10000 seed=1 tau_c=0.05 beta_E=0.2 J=0.5400 (5/6)
+[progress] 23/36  N=10000 seed=1 tau_c=0.05 beta_E=0.2 J=0.5600 (6/6)
+[progress] 24/36  N=10000 seed=2 tau_c=0.05 beta_E=0.2 J=0.4600 (1/6)
+[progress] 25/36  N=10000 seed=2 tau_c=0.05 beta_E=0.2 J=0.4800 (2/6)
+[progress] 26/36  N=10000 seed=2 tau_c=0.05 beta_E=0.2 J=0.5000 (3/6)
+[progress] 27/36  N=10000 seed=2 tau_c=0.05 beta_E=0.2 J=0.5200 (4/6)
+[progress] 28/36  N=10000 seed=2 tau_c=0.05 beta_E=0.2 J=0.5400 (5/6)
+[progress] 29/36  N=10000 seed=2 tau_c=0.05 beta_E=0.2 J=0.5600 (6/6)
+[progress] 30/36  N=10000 seed=3 tau_c=0.05 beta_E=0.2 J=0.4600 (1/6)
+[progress] 31/36  N=10000 seed=3 tau_c=0.05 beta_E=0.2 J=0.4800 (2/6)
+[progress] 32/36  N=10000 seed=3 tau_c=0.05 beta_E=0.2 J=0.5000 (3/6)
+[progress] 33/36  N=10000 seed=3 tau_c=0.05 beta_E=0.2 J=0.5200 (4/6)
+[progress] 34/36  N=10000 seed=3 tau_c=0.05 beta_E=0.2 J=0.5400 (5/6)
+[progress] 35/36  N=10000 seed=3 tau_c=0.05 beta_E=0.2 J=0.5600 (6/6)
+
+================================================================================
+Saved: results/opt_N10000_scale_20260319_150818/opt_rows.csv
+Saved: results/opt_N10000_scale_20260319_150818/opt_summary.csv
+Figures: results/opt_N10000_scale_20260319_150818/*.png
+================================================================================

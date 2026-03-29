@@ -1,0 +1,58 @@
+{
+    "timestamp": "2026-03-04T04:31:56Z",
+    "git_hash": "unknown",
+    "config": {
+        "simulation": {
+            "dt": 0.0001,
+            "T": 120.0,
+            "N": 5000,
+            "lambda0": 100.0,
+            "theta0": -3.0,
+            "thetaV": 1.0,
+            "thetaA": -0.5,
+            "tau_ref": 0.005,
+            "tau_s": 0.02,
+            "tau_v": 0.01,
+            "do_v_reset": true,
+            "v_reset_val": 0.0,
+            "noise_sigma": 0.5
+        },
+        "stimulus": {
+            "type": "ou",
+            "tau_c": 0.05,
+            "sigma_u": 1.0,
+            "mu_u": 0.0,
+            "var_req": 1.0
+        },
+        "criticality": {
+            "r_max": 200.0,
+            "eps_probe": 0.02,
+            "f0_probe": 5.0,
+            "burn_in_s": 20.0
+        },
+        "sweep": {
+            "seeds": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        },
+        "optimization": {
+            "beta_E": 0.01,
+            "beta_C": 0.005,
+            "lags": 20,
+            "lag_dt": 0.005
+        }
+    },
+    "seeds": {
+        "global": 42,
+        "sweep": [
+            2
+        ]
+    },
+    "output_paths": [
+        "results/jc_refine_20260304_094704/rows_N1000_seed2.csv"
+    ]
+}

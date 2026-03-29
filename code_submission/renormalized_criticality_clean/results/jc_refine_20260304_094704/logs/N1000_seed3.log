@@ -1,0 +1,6 @@
+Running Jc grid over N=[1000], pass_mode=refine
+
+Evaluating N=1000...
+  Pass 2: Refined Grid...
+    Grid: [0.40, 0.80]
+Saved results/jc_refine_20260304_094704/rows_N1000_seed3.csv

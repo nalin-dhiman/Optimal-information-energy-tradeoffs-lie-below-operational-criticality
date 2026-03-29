@@ -1,0 +1,85 @@
+{
+    "timestamp": "2026-03-25T09:45:44Z",
+    "git_hash": "unknown",
+    "config": {
+        "simulation": {
+            "dt": 0.0001,
+            "T": 120.0,
+            "N": 5000,
+            "lambda0": 100.0,
+            "theta0": -3.0,
+            "thetaV": 1.0,
+            "thetaA": -0.5,
+            "tau_ref": 0.005,
+            "tau_s": 0.02,
+            "tau_v": 0.01,
+            "do_v_reset": true,
+            "v_reset_val": 0.0,
+            "noise_sigma": 0.5
+        },
+        "stimulus": {
+            "type": "ou",
+            "tau_c": 0.05,
+            "sigma_u": 1.0,
+            "mu_u": 0.0,
+            "var_req": 1.0
+        },
+        "criticality": {
+            "r_max": 200.0,
+            "eps_probe": 0.02,
+            "f0_probe": 5.0,
+            "burn_in_s": 20.0
+        },
+        "sweep": {
+            "seeds": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        },
+        "optimization": {
+            "beta_E": 0.01,
+            "beta_C": 0.005,
+            "lags": 20,
+            "lag_dt": 0.005
+        }
+    },
+    "seeds": {
+        "seeds": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "args": {
+            "config": "configs/base.yaml",
+            "outdir": "results/opt_N5000_plateau_precision_20260321_192439",
+            "jc_outdir": "results/jc_refine_20260304_094704",
+            "N": 5000,
+            "J_center_source": "tau",
+            "J_window": 0.2,
+            "J_points": 13,
+            "J_extra": "0.00,-0.02,-0.01,0.01,0.02",
+            "J_list": "0.48,0.49,0.50,0.51,0.52,0.53",
+            "seeds": "1,2,3,4",
+            "tau_c_list": "0.05",
+            "beta_E_list": "0.0,0.2",
+            "beta_C": null,
+            "T_opt": 10.0,
+            "dt_opt": 0.0005,
+            "n_restarts": 2,
+            "maxiter": 8,
+            "resume": false,
+            "overwrite": false,
+            "progress_every": 1,
+            "rate_cap": 20.0,
+            "smoke_test": false
+        }
+    },
+    "output_paths": [
+        "results/opt_N5000_plateau_precision_20260321_192439/opt_rows.csv",
+        "results/opt_N5000_plateau_precision_20260321_192439/opt_summary.csv"
+    ]
+}
