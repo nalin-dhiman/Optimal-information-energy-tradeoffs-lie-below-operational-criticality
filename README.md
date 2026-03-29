@@ -17,7 +17,7 @@
 8. [Stage 2: Refined Jc Sweep](#8-stage-2-refined-jc-sweep)
 9. [Stage 3: Information–Energy Optimization Near Jc](#9-stage-3-informationenergy-optimization-near-jc)
 10. [Stage 4: Figure Regeneration](#10-stage-4-figure-regeneration)
-11. [Reviewer-Driven Robustness Analyses](#11-reviewer-driven-robustness-analyses)
+11. [Robustness Analyses](#11robustness-analyses)
     - [analysis_0.0.2   Stability & Mechanism Diagnostics](#analysis_002--stability--mechanism-diagnostics)
     - [analysis_0.0.3   Full Robustness Suite](#analysis_003--full-robustness-suite)
 12. [Manuscript Figures Index](#12-manuscript-figures-index)
@@ -62,7 +62,7 @@ Optimal-information-energy/
 │   │   ├── Fig3_mechanism_stability_clean.{pdf,png}
 │   │   ├── Fig4_robustness_clean.{pdf,png}
 │   │   ├── FigS1_critical_markers_clean.{pdf,png}
-│   │   └── FigR_*.{pdf,png}           ← Reviewer response figures
+│   │   └── FigR_*.{pdf,png}           ←  response figures
 │   └── tables/                        ← CSV tables from revision analyses
 │
 ├── code_submission/
@@ -108,7 +108,7 @@ Optimal-information-energy/
 │       │   ├── opt_N8000_scale_20260319_150812/
 │       │   ├── opt_N10000_scale_20260319_150818/
 │       │   └── opt_N12000_scale_20260319_150824/
-│       ├── analysis_0.0.2/              ← Reviewer-driven: stability diagnostics
+│       ├── analysis_0.0.2/              ←  stability diagnostics
 │       │   ├── scripts/
 │       │   │   ├── classify_plateaus.py
 │       │   │   ├── marker_sensitivity_fixed.py
@@ -116,7 +116,7 @@ Optimal-information-energy/
 │       │   │   └── tuned_branch_stability_clean.py
 │       │   ├── figures/
 │       │   └── tables/
-│       └── analysis_0.0.3/             ← Reviewer-driven: full robustness suite
+│       └── analysis_0.0.3/             ← full robustness suite
 │           ├── scripts/
 │           │   ├── step1_uncertainty.py
 │           │   ├── step2_matched_protocol.py
@@ -417,7 +417,7 @@ export PYTHONPATH="$(pwd)/renormalized_criticality_clean"
 # Example: regenerate Fig 1
 python make_fig1.py
 
-# Example: regenerate reviewer figure for beta_C sensitivity
+# Example: regenerate figure for beta_C sensitivity
 python make_figR_betaC.py
 ```
 
@@ -441,7 +441,7 @@ python make_figR_betaC.py
 
 ---
 
-## 11. Reviewer-Driven Robustness Analyses
+## 11. Robustness Analyses
 
 These analyses were added during revision to directly address referee criticisms. They are self-contained and do **not** require re-running Stages 1–3.
 
