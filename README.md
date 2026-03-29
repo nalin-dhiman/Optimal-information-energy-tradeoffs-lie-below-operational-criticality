@@ -10,7 +10,7 @@
 1. [Overview and Scientific Claim](#1-overview-and-scientific-claim)
 2. [Repository Layout](#2-repository-layout)
 3. [Environment Setup](#3-environment-setup)
-4. [⚠️ Path Configuration — Read This First](#4-️-path-configuration--read-this-first)
+4. [⚠️ Path Configuration   Read This First](#4-️-path-configuration--read-this-first)
 5. [Pipeline Overview](#5-pipeline-overview)
 6. [Stage 0: Smoke Tests (Fast Sanity Check)](#6-stage-0-smoke-tests-fast-sanity-check)
 7. [Stage 1: Coarse Jc Sweep](#7-stage-1-coarse-jc-sweep)
@@ -18,8 +18,8 @@
 9. [Stage 3: Information–Energy Optimization Near Jc](#9-stage-3-informationenergy-optimization-near-jc)
 10. [Stage 4: Figure Regeneration](#10-stage-4-figure-regeneration)
 11. [Reviewer-Driven Robustness Analyses](#11-reviewer-driven-robustness-analyses)
-    - [analysis_0.0.2 — Stability & Mechanism Diagnostics](#analysis_002--stability--mechanism-diagnostics)
-    - [analysis_0.0.3 — Full Robustness Suite](#analysis_003--full-robustness-suite)
+    - [analysis_0.0.2   Stability & Mechanism Diagnostics](#analysis_002--stability--mechanism-diagnostics)
+    - [analysis_0.0.3   Full Robustness Suite](#analysis_003--full-robustness-suite)
 12. [Manuscript Figures Index](#12-manuscript-figures-index)
 13. [Monitoring Long-Running Jobs](#13-monitoring-long-running-jobs)
 14. [Reproducibility Guarantees](#14-reproducibility-guarantees)
@@ -30,11 +30,11 @@
 
 ## 1. Overview and Scientific Claim
 
-This package provides the complete, reproducible simulation and analysis pipeline supporting the Physical Review E manuscript:
+This package provides the complete, reproducible simulation and analysis pipeline:
 
 > **Optimal information–energy tradeoffs occupy a finite subcritical regime below operational criticality in a driven renewal network.**
 
-Specifically, the manuscript argues — conservatively — that when a finite renewal/escape-rate population is jointly optimized for decoding performance and metabolic cost, the optimal coupling **J\*** consistently falls **below** the renormalized critical coupling **J\_c^{ren}(N)** measured from finite-size simulations. It does **not** claim a universal constant offset or a clean asymptotic scaling law.
+Specifically, the manuscript argues   conservatively   that when a finite renewal/escape-rate population is jointly optimized for decoding performance and metabolic cost, the optimal coupling **J\*** consistently falls **below** the renormalized critical coupling **J\_c^{ren}(N)** measured from finite-size simulations. It does **not** claim a universal constant offset or a clean asymptotic scaling law.
 
 The pipeline is built around two connected tasks:
 
@@ -166,7 +166,7 @@ pip install -r env/requirements.txt
 
 ---
 
-## 4. ⚠️ Path Configuration — Read This First
+## 4. ⚠️ Path Configuration   Read This First
 
 **All paths in this pipeline are user-specified at runtime. There are no hardcoded absolute paths in the source code.**
 
@@ -234,7 +234,7 @@ Run these first to verify your environment is correct. They complete in minutes.
 cd /YOUR/PATH/TO/Optimal-information-energy/code_submission/renormalized_criticality_clean
 export PYTHONPATH="$(pwd)"
 
-# Jc smoke test — runs a tiny grid and merges
+# Jc smoke test   runs a tiny grid and merges
 python scripts/run_jc_grid.py \
   --config configs/base.yaml \
   --smoke_test \
@@ -330,7 +330,7 @@ python scripts/merge_jc_results.py \
   --bootstrap
 ```
 
-> A pre-computed refined snapshot is included at `results/jc_refine_20260304_094704/` — you may use this directly in Stage 3 if you do not want to re-run Stages 1–2.
+> A pre-computed refined snapshot is included at `results/jc_refine_20260304_094704/`   you may use this directly in Stage 3 if you do not want to re-run Stages 1–2.
 
 ---
 
@@ -397,7 +397,7 @@ python -u scripts/run_opt_grid.py \
 
 ## 10. Stage 4: Figure Regeneration
 
-### Option A — Convenience script (auto-discovers latest results)
+### Option A   Convenience script (auto-discovers latest results)
 
 ```bash
 cd /YOUR/PATH/TO/Optimal-information-energy/code_submission/renormalized_criticality_clean
@@ -406,7 +406,7 @@ export PYTHONPATH="$(pwd)"
 python scripts/make_figures.py --auto --outdir results/figs
 ```
 
-### Option B — Per-figure scripts (recommended for selective regeneration)
+### Option B   Per-figure scripts (recommended for selective regeneration)
 
 All figure scripts live in `code_submission/`. Each can be run standalone and must know where to load data from. **Edit the `DATA_DIR` or equivalent variable at the top of each script to point to your results directory.**
 
@@ -425,19 +425,19 @@ python make_figR_betaC.py
 
 | Script | Produces |
 |---|---|
-| `make_fig1.py` | Fig 1 — Objective landscapes across J |
-| `make_fig2.py` | Fig 2 — Regime summary (Δ\* vs β_E) |
-| `make_fig3.py` | Fig 3 — Mechanism stability analysis |
-| `make_fig4.py` | Fig 4 — Robustness composite |
-| `make_figS1.py` | Fig S1 — Critical marker sensitivity |
-| `make_figR_betaC.py` | FigR — β_C sensitivity |
-| `make_figR_decoder.py` | FigR — Decoder robustness |
-| `make_figR_filter.py` | FigR — Rate filter effect |
-| `make_figR_input_stats.py` | FigR — Input statistics robustness |
-| `make_figR_matched.py` | FigR — Matched protocol control |
-| `make_figR_nonnormality.py` | FigR — Non-normality diagnostics |
-| `make_figR_supracritical.py` | FigR — Supracritical probe |
-| `make_figR_uncertainty.py` | FigR — Objective uncertainty bands |
+| `make_fig1.py` | Fig 1   Objective landscapes across J |
+| `make_fig2.py` | Fig 2   Regime summary (Δ\* vs β_E) |
+| `make_fig3.py` | Fig 3   Mechanism stability analysis |
+| `make_fig4.py` | Fig 4   Robustness composite |
+| `make_figS1.py` | Fig S1   Critical marker sensitivity |
+| `make_figR_betaC.py` | FigR   β_C sensitivity |
+| `make_figR_decoder.py` | FigR   Decoder robustness |
+| `make_figR_filter.py` | FigR   Rate filter effect |
+| `make_figR_input_stats.py` | FigR   Input statistics robustness |
+| `make_figR_matched.py` | FigR   Matched protocol control |
+| `make_figR_nonnormality.py` | FigR   Non-normality diagnostics |
+| `make_figR_supracritical.py` | FigR   Supracritical probe |
+| `make_figR_uncertainty.py` | FigR   Objective uncertainty bands |
 
 ---
 
@@ -445,7 +445,7 @@ python make_figR_betaC.py
 
 These analyses were added during revision to directly address referee criticisms. They are self-contained and do **not** require re-running Stages 1–3.
 
-### analysis_0.0.2 — Stability & Mechanism Diagnostics
+### analysis_0.0.2   Stability & Mechanism Diagnostics
 
 Located at: `code_submission/renormalized_criticality_clean/analysis_0.0.2/`
 
@@ -474,7 +474,7 @@ Outputs (figures and tables) are written to `analysis_0.0.2/figures/` and `analy
 
 ---
 
-### analysis_0.0.3 — Full Robustness Suite
+### analysis_0.0.3   Full Robustness Suite
 
 Located at: `code_submission/renormalized_criticality_clean/analysis_0.0.3/`
 
@@ -495,7 +495,7 @@ python analysis_0.0.3/scripts/step1_uncertainty.py \
 python analysis_0.0.3/scripts/step2_matched_protocol.py \
   --opt_dir $OPT_DIR
 
-# Step 3: Rate filter effect — impact of spike-rate filtering on objective
+# Step 3: Rate filter effect   impact of spike-rate filtering on objective
 python analysis_0.0.3/scripts/step3_filter_effect.py \
   --opt_dir $OPT_DIR
 
@@ -522,7 +522,7 @@ python analysis_0.0.3/scripts/step7_extract.py \
 # Or run full sweep:
 bash analysis_0.0.3/scripts/step7_run_tau_sweep.sh $OPT_DIR
 
-# Step 8: Supracritical probe — does the optimizer erroneously explore J > Jc?
+# Step 8: Supracritical probe   does the optimizer erroneously explore J > Jc?
 python analysis_0.0.3/scripts/step8_supracritical_probe.py \
   --opt_dir $OPT_DIR --jc_dir $JC_DIR
 ```
@@ -602,7 +602,7 @@ The pre-packaged `results/` directories contain the `run_manifest.json` files fr
 
 4. **Paths on Windows:** The pipeline has only been tested on Linux/macOS. Windows users will need to replace `export PYTHONPATH=...` with `set PYTHONPATH=...` (cmd) or `$env:PYTHONPATH = ...` (PowerShell), and path separators may need adjusting in shell scripts.
 
-5. **The `--resume` flag:** When resuming an interrupted optimization run, the script reads completed (J, seed, β_E, τ_c) combinations from the existing `opt_rows.csv`. If you change simulation parameters mid-run, do **not** use `--resume` — start a fresh `--outdir` to avoid mixing results from different settings.
+5. **The `--resume` flag:** When resuming an interrupted optimization run, the script reads completed (J, seed, β_E, τ_c) combinations from the existing `opt_rows.csv`. If you change simulation parameters mid-run, do **not** use `--resume`   start a fresh `--outdir` to avoid mixing results from different settings.
 
 ---
 
