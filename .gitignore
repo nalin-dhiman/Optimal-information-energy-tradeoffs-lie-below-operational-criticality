@@ -1,31 +1,45 @@
-# Python
+raw/
+raw/**
+checkpoints/
+checkpoints/**
+cache/
+cache/**
+tmp/
+tmp/**
+private_paper/
+private_paper/**
+paper/
+paper/**
+manuscript/
+manuscript/**
+submission*/
+rebuttal*/
+review*/
+project_cold_archive/
+project_closure/
+private_closure_paper*/
+*.tex
+*.bib
+*.npz
+*.npy
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.zst
+*.log
 __pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-.Python
-*.egg-info/
-dist/
-build/
-.eggs/
-*.egg
-
-# Virtual environments
+*.pyc
+.pytest_cache/
 .venv/
-venv/
-env/
-
-# Jupyter
-.ipynb_checkpoints/
-
-# OS
+*.egg-info/
+build/
+dist/
 .DS_Store
-Thumbs.db
+local_outputs/
 
-# IDE
-.vscode/
-.idea/
-
-# Large data (raw simulation rows may be too big for GitHub)
-# Uncomment below if result CSVs are too large:
-# results/**/rows_*.csv

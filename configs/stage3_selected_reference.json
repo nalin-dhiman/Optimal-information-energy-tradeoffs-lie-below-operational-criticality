@@ -1,0 +1,52 @@
+{
+  "N": 2000,
+  "dt_s": 0.0005,
+  "row_s": 0.005,
+  "burn_s": 4.0,
+  "lambda0_Hz": 100.0,
+  "tau_ref_s": 0.005,
+  "tau_s_s": 0.02,
+  "tau_v_s": 0.01,
+  "noise_sigma": 0.5,
+  "reset": true,
+  "v_reset": 0.0,
+  "input_tau_s": 0.05,
+  "input_sigma": 1.0,
+  "history_s": 0.1,
+  "latency_s": 0.0,
+  "fir_taps": 41,
+  "cutoff_Hz": 80.0,
+  "ridge_alpha": [
+    1e-05,
+    0.0001,
+    0.001,
+    0.01,
+    0.1
+  ],
+  "train_s": 40.0,
+  "validation_s": 20.0,
+  "outer_s": 40.0,
+  "blocks": 6,
+  "networks": [
+    {
+      "name": "selected_recurrent",
+      "J": 0.26,
+      "theta": [
+        3.825831352721199,
+        3.952520229283838,
+        -0.49107796168789886
+      ],
+      "true_no_recurrence": false
+    },
+    {
+      "name": "true_no_recurrence",
+      "J": 0.0,
+      "theta": [
+        3.037141758522491,
+        0.4203174878946898,
+        0.0
+      ],
+      "true_no_recurrence": true
+    }
+  ]
+}
