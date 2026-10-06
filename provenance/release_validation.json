@@ -1,0 +1,10 @@
+{
+  "full_test_suite_passed": 14,
+  "archival_zero_probe_checks": "3 configurations bit-identical",
+  "smoke_completed": 4,
+  "smoke_failures": 0,
+  "summary_block_rows": 186,
+  "summary_rows": 31,
+  "raw_and_private_files_excluded": true,
+  "report_not_in_repository": true
+}
