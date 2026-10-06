@@ -1,0 +1,38 @@
+Candidate file-size audit, before git add
+
+No raw arrays or archives. Source arrays only regenerate locally. New-branch tree is code-only; old history is preserved.
+
+83568	results_summary/outer_test_blocks.csv
+24180	results_summary/stage4_mechanism_predictions.csv
+19280	results_summary/selected_theta_by_J.csv
+15477	results_summary/outer_test_summary.csv
+5458	src/simulator/archival.py
+4601	results_summary/equivalence_by_J.csv
+4590	src/simulator/stimulus.py
+4199	src/simulator/diagnostic.py
+4031	tests/test_kernel_and_reader.py
+3610	src/simulator/observed.py
+2655	results_summary/stage2_prediction_metrics.csv
+2609	docs/MODEL.md
+2504	README.md
+2384	src/analysis/evaluation.py
+2245	src/analysis/reader.py
+2129	docs/DATA_FORMAT.md
+2113	scripts/reproduce_key_results.py
+2008	docs/REPRODUCIBILITY.md
+1798	scripts/reproduce_figures.py
+1389	provenance/summary_manifest.json
+1341	results_summary/stage4_mechanism_metrics.json
+1069	LICENSE
+1015	results_summary/cleanup_10Hz_contrasts.csv
+970	scripts/validate_archival_kernel.py
+905	configs/stage3_selected_reference.json
+900	configs/smoke.json
+867	docs/PROJECT_STATUS.md
+658	results_summary/cleanup_10Hz_gain.csv
+428	.gitignore
+400	provenance/archival_source_hashes.json
+90	requirements.txt
+67	src/__init__.py
+67	src/simulator/__init__.py
+62	src/analysis/__init__.py

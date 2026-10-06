@@ -1,0 +1,38 @@
+{
+  "results_summary/cleanup_10Hz_contrasts.csv": {
+    "bytes": 1015,
+    "sha256": "583dfd5fc0e8359f19d3faab0cbf8d1f6b2766282b12a1cb33eca82db39149a8"
+  },
+  "results_summary/cleanup_10Hz_gain.csv": {
+    "bytes": 658,
+    "sha256": "3708c2254125ec165ff4583eb546f11561fada5b969bb9ca769e5a1f1fd3a5c4"
+  },
+  "results_summary/equivalence_by_J.csv": {
+    "bytes": 4601,
+    "sha256": "ac9cc2519385876149065543ac05a9a9c96c83b2766ec1e52f51cde0eef403fe"
+  },
+  "results_summary/outer_test_blocks.csv": {
+    "bytes": 83568,
+    "sha256": "2b55798db1fc839f3491507accb05180b4a78a241e26f9ec91dde5ed198869ea"
+  },
+  "results_summary/outer_test_summary.csv": {
+    "bytes": 15477,
+    "sha256": "11af9e5e3a014a8e27740ae0cdc7bf54cd586caef251b3362b27b80413cdeda0"
+  },
+  "results_summary/selected_theta_by_J.csv": {
+    "bytes": 19280,
+    "sha256": "b5b6d4b3ae719e30be0b70de15f937033bd0fe7f903ca3e43ed4516670b064a5"
+  },
+  "results_summary/stage2_prediction_metrics.csv": {
+    "bytes": 2655,
+    "sha256": "9d680746b44dd98a3a764ace782e3d215f71ef93d36132e53bd1089446702a9c"
+  },
+  "results_summary/stage4_mechanism_metrics.json": {
+    "bytes": 1341,
+    "sha256": "ad77ed0c8ac94da16283da275766863a84bf7b86b2679bcc9d9d490ed11a18a4"
+  },
+  "results_summary/stage4_mechanism_predictions.csv": {
+    "bytes": 24180,
+    "sha256": "30f5bf131a922ac7b257e0bf0b679717f1fb282617b35767e3ae91013bf166dc"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-05T16:01:52.481726+00:00",
+  "rounds": [
+    {
+      "round": "original",
+      "loop_absolute_NRMSE": 0.12692260253167495,
+      "frozen_plant_absolute_NRMSE": 0.08221914051305887,
+      "loop_change_NRMSE": 2.0269564052350404,
+      "zero_change_baseline_NRMSE": 1.0,
+      "change_conditions": 32,
+      "status": "post hoc strict sensitivity; no refit; used only to limit claims",
+      "data": [
+        "provenance/held_model_locked.json",
+        "derived/held_response_blocks.csv",
+        "derived/held_numeric_predictions_locked.csv"
+      ],
+      "loop_benefit_vs_frozen_plant_CI": [
+        -0.9832432106952775,
+        -0.9532278256553455
+      ]
+    },
+    {
+      "round": "corrective",
+      "loop_absolute_NRMSE": 0.11924424010159086,
+      "frozen_plant_absolute_NRMSE": 0.06885484554617993,
+      "loop_change_NRMSE": 2.0236444767024597,
+      "zero_change_baseline_NRMSE": 1.0,
+      "change_conditions": 32,
+      "status": "post hoc strict sensitivity; no refit; used only to limit claims",
+      "data": [
+        "provenance/secondary_held_model_locked.json",
+        "derived/secondary_response_blocks.csv",
+        "derived/secondary_numeric_predictions_locked.csv"
+      ],
+      "loop_benefit_vs_frozen_plant_CI": [
+        -1.1008967601026896,
+        -1.0655974421149117
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+group,model,conditions,MAE,MAE_lo,MAE_hi,RMSE,source_predictions,source_observed
+heldout_couplings,first_mechanism,4,0.3255450496074124,0.31722083867216777,0.3327102436898558,0.326263212216965,derived/held_out_predictions.csv,noise_pathway_results.csv
+heldout_couplings,augmented_mechanism,4,0.03711722656793896,0.029952032485495536,0.04544143750318355,0.045632976932388804,derived/held_out_predictions.csv,noise_pathway_results.csv
+heldout_couplings,constant,4,0.02322266362286965,0.020920410580082927,0.0253743233147935,0.023383865763800863,derived/held_out_predictions.csv,noise_pathway_results.csv
+heldout_couplings,interpolation,4,0.010937419845600538,0.00883395971982981,0.01843350810827253,0.01521700712231543,derived/held_out_predictions.csv,noise_pathway_results.csv
+heldout_couplings,empirical,4,0.010632316196398386,0.008129424797693408,0.018956527131642975,0.015186503484048713,derived/held_out_predictions.csv,noise_pathway_results.csv
+mixed_condition,first_mechanism,9,0.32603166860847926,0.3191972892912613,0.330696040307017,0.32733112108034956,derived/held_out_predictions.csv,noise_pathway_results.csv
+mixed_condition,augmented_mechanism,9,0.03690954363126019,0.03242118694586009,0.0437439229484782,0.05050669236650471,derived/held_out_predictions.csv,noise_pathway_results.csv
+mixed_condition,constant,9,0.02325925514145297,0.021635137776327355,0.026392390538338084,0.030568015134299832,derived/held_out_predictions.csv,noise_pathway_results.csv
+mixed_condition,interpolation,9,0.011704629783747866,0.009720602312433225,0.016183300273434134,0.015154469544836539,derived/held_out_predictions.csv,noise_pathway_results.csv
+mixed_condition,empirical,9,0.010008096443341379,0.008172591023163422,0.014179370002670203,0.013328057169368189,derived/held_out_predictions.csv,noise_pathway_results.csv
+all_heldout,first_mechanism,13,0.325881939685074,0.3184621840603954,0.3311136008165503,0.32700290518986996,derived/held_out_predictions.csv,noise_pathway_results.csv
+all_heldout,augmented_mechanism,13,0.0369734460733152,0.03174178494183894,0.04439320169799387,0.04905868393221328,derived/held_out_predictions.csv,noise_pathway_results.csv
+all_heldout,constant,13,0.023247996212658103,0.02171048805307713,0.026004429979110115,0.028550700726271937,derived/held_out_predictions.csv,noise_pathway_results.csv
+all_heldout,interpolation,13,0.011468565187394843,0.009555673110480679,0.016880423622621096,0.015173739328475459,derived/held_out_predictions.csv,noise_pathway_results.csv
+all_heldout,empirical,13,0.010200164059666613,0.008273896782792346,0.015407384356967856,0.013926326821123354,derived/held_out_predictions.csv,noise_pathway_results.csv
