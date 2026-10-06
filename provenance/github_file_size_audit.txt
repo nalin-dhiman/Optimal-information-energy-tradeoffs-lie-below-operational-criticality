@@ -1,7 +1,8 @@
-Candidate file-size audit, before git add
+Final GitHub file-size audit. Every candidate file was scanned before staging.
+No file >25 MB; no raw arrays, ZIPs, manuscript files, private absolute paths or credential patterns.
+Historical branches/ancestor objects remain unchanged; this audit applies to the new branch tree.
 
-No raw arrays or archives. Source arrays only regenerate locally. New-branch tree is code-only; old history is preserved.
-
+Bytes	Path
 83568	results_summary/outer_test_blocks.csv
 24180	results_summary/stage4_mechanism_predictions.csv
 19280	results_summary/selected_theta_by_J.csv
@@ -23,6 +24,7 @@ No raw arrays or archives. Source arrays only regenerate locally. New-branch tre
 1798	scripts/reproduce_figures.py
 1389	provenance/summary_manifest.json
 1341	results_summary/stage4_mechanism_metrics.json
+1311	provenance/github_file_size_audit.txt
 1069	LICENSE
 1015	results_summary/cleanup_10Hz_contrasts.csv
 970	scripts/validate_archival_kernel.py
@@ -32,6 +34,8 @@ No raw arrays or archives. Source arrays only regenerate locally. New-branch tre
 658	results_summary/cleanup_10Hz_gain.csv
 428	.gitignore
 400	provenance/archival_source_hashes.json
+349	provenance/validation_environment.json
+276	provenance/release_validation.json
 90	requirements.txt
 67	src/__init__.py
 67	src/simulator/__init__.py
